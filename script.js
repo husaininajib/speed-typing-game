@@ -3,8 +3,6 @@ const textDisplay = document.getElementById("text-display")
 const textInput = document.getElementById("text-input")
 const timerDisplay = document.getElementById("timer")
 
-    let correct = true
-
 textInput.addEventListener("input", () => {
     const arrayText = textDisplay.querySelectorAll("span")
     const arrayInput = textInput.value.split("")
@@ -27,7 +25,6 @@ textInput.addEventListener("input", () => {
     })
     if (correct) {
         renderNewText()
-        setTimer()
     }
 })
 
@@ -47,7 +44,6 @@ async function renderNewText() {
     textInput.value = null
     setTimer()
 }
-renderNewText()
 
 let startTime
 function setTimer() {
@@ -61,4 +57,7 @@ function setTimer() {
 function getTimerTime() {
     return Math.floor((new Date() - startTime) / 1000)
 }
+
+renderNewText()
+
 

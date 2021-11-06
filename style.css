@@ -57,14 +57,14 @@ h2 {
   outline: none;
 }
 .text-input:focus {
-  border-color: black;
+  border-color: #333;
 }
 .correct {
-  color: green;
+  color: #2fb62b;
   font-weight: 700;
 }
 .incorrect {
-  color: red;
+  color: #ff0000;
   font-weight: 700;
   text-decoration: underline;
 }
