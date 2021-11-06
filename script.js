@@ -1,12 +1,15 @@
 const RANDOM_QUOTE_API_URL = "https://api.quotable.io/random"
 const textDisplay = document.getElementById("text-display")
 const textInput = document.getElementById("text-input")
+const timerDisplay = document.getElementById("timer")
 
-let correct = true
+    let correct = true
 
 textInput.addEventListener("input", () => {
     const arrayText = textDisplay.querySelectorAll("span")
     const arrayInput = textInput.value.split("")
+
+    let correct = true
     arrayText.forEach((letterSpan, index) => {
         const letter = arrayInput[index]
         if (letter == null) {
@@ -24,6 +27,7 @@ textInput.addEventListener("input", () => {
     })
     if (correct) {
         renderNewText()
+        setTimer()
     }
 })
 
@@ -41,5 +45,20 @@ async function renderNewText() {
         textDisplay.appendChild(letterSpan)
     })
     textInput.value = null
+    setTimer()
 }
 renderNewText()
+
+let startTime
+function setTimer() {
+    timerDisplay.innerText = 0
+    startTime = new Date()
+    setInterval( () => {
+        timer.innerText = getTimerTime()
+    }, 1000)
+}
+
+function getTimerTime() {
+    return Math.floor((new Date() - startTime) / 1000)
+}
+

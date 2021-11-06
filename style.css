@@ -16,8 +16,15 @@ body {
 body,
 .text-input {
   font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 3rem;
 }
 
+h2 {
+  color: #f0db4f;
+}
 .container {
   background-color: #f0db4f;
   padding: 1rem;
@@ -26,21 +33,21 @@ body,
   max-width: 90%;
 }
 .timer {
-  position: absolute;
-  top: 3rem;
   font-size: 3rem;
   color: #f0db4f;
   font-weight: bold;
+  margin: 2rem 0;
 }
 .text-display {
   margin-bottom: 1rem;
   margin-left: calc(1rem + 2px);
   margin-right: calc(1rem + 2px);
+  font-size: 1.3rem;
 }
 .text-input {
   background-color: transparent;
   border: 2px solid #a1922e;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border-radius: 0.5rem;
   width: 100%;
   height: 8rem;
@@ -54,8 +61,10 @@ body,
 }
 .correct {
   color: green;
+  font-weight: 700;
 }
 .incorrect {
   color: red;
+  font-weight: 700;
   text-decoration: underline;
 }
