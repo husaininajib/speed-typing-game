@@ -41,6 +41,7 @@ body,
   background-color: transparent;
   border: 2px solid #a1922e;
   font-size: 1rem;
+  border-radius: 0.5rem;
   width: 100%;
   height: 8rem;
   margin: auto;
@@ -50,4 +51,11 @@ body,
 }
 .text-input:focus {
   border-color: black;
+}
+.correct {
+  color: green;
+}
+.incorrect {
+  color: red;
+  text-decoration: underline;
 }
