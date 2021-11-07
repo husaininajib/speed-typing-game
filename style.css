@@ -10,7 +10,7 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  background-color: #1e0555;
+  background-color: #00203fff;
 }
 
 body,
@@ -23,10 +23,10 @@ body,
 }
 
 h2 {
-  color: #f0db4f;
+  color: #adefd1ff;
 }
 .container {
-  background-color: #f0db4f;
+  background-color: #adefd1ff;
   padding: 1rem;
   border-radius: 0.5rem;
   width: 700px;
@@ -34,7 +34,7 @@ h2 {
 }
 .timer {
   font-size: 3rem;
-  color: #f0db4f;
+  color: #adefd1ff;
   font-weight: bold;
   margin: 2rem 0;
 }
@@ -46,7 +46,7 @@ h2 {
 }
 .text-input {
   background-color: transparent;
-  border: 2px solid #a1922e;
+  border: 2px solid #00203fff;
   font-size: 1.2rem;
   border-radius: 0.5rem;
   width: 100%;
